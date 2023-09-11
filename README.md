@@ -38,7 +38,7 @@ Steps to modify the profile repository with an updated profile are given below:
 
 <details>
 <summary>visual</summary>
-<img src="drawio/ss.update-profile.drawio.png" width="500" height="600">
+<img src="drawio/ss.copy-profile.drawio.png" width="500" height="600">
 </details>
 
 ###### 3. compare & pull request
@@ -68,7 +68,7 @@ Steps to modify the profile repository with an updated profile are given below:
 
 <details>
 <summary>visual</summary>
-<img src="drawio/ss.merge-pull-request.drawio.png" width="500" height="600">
+<img src="drawio/ss.confirm-merge.drawio.png" width="500" height="600">
 </details>
 
 -----
