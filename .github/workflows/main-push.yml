@@ -37,8 +37,8 @@ jobs:
     - name: Clone downstream repo
       uses: actions/checkout@v2
       with:
-        repository: degenaro/trestle-component-definition-my-gizmo
-        path: './trestle-component-definition-my-gizmo'
+        repository: my-repo-base/my-component-definition
+        path: './my-component-definition'
         token: ${{ secrets.GIT_TOKEN }}
         fetch-depth: 0
     - name: Update profiles
