@@ -15,5 +15,5 @@ fi
 
 ./scripts/automation/assemble_profiles.sh $version_tag
 git config --global user.email "$EMAIL"
-git config --global user.name "$ENAME" 
+git config --global user.name "$NAME" 
 semantic-release publish

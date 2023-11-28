@@ -5,7 +5,7 @@ source config.env
 export COMMIT_TITLE="chore: Profiles automatic update."
 export COMMIT_BODY="Sync profiles with $PROFILE repo"
 git config --global user.email "$EMAIL"
-git config --global user.name "$ENAME"
+git config --global user.name "$NAME"
 cd "$REPO_COMPONENT_DEFINITION"
 git checkout -b "profiles_autoupdate_$GITHUB_RUN_ID"
 cp -r ../profiles .
