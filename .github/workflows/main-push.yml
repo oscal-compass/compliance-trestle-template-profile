@@ -34,7 +34,16 @@ jobs:
         fetch-depth: 0
         ref: main
         token: ${{ secrets.GIT_TOKEN }}
+    - name: Determine initialization status
+      id: determine_initialization_status
+      run: |
+        set +e
+        bash scripts/automation/check_profile.sh
+        exitcode="$?"
+        echo "exitcode: $exitcode"
+        echo "exitcode=$exitcode" >> $GITHUB_OUTPUT
     - name: Clone downstream repo
+      if: steps.determine_initialization_status.outputs.exitcode == '1'
       uses: actions/checkout@v2
       with:
         repository: my-repo-base/my-component-definition
@@ -42,6 +51,7 @@ jobs:
         token: ${{ secrets.GIT_TOKEN }}
         fetch-depth: 0
     - name: Update profiles
+      if: steps.determine_initialization_status.outputs.exitcode == '1'
       run: bash scripts/automation/update_downstream.sh
       env:
         GH_TOKEN: ${{ secrets.GIT_TOKEN }}
