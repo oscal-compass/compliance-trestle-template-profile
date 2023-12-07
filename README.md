@@ -2,8 +2,7 @@
 
 compliance-trestle repository for agile authoring of profile
 
-Prerequisite: [profile template](https://github.com/IBM/compliance-trestle-template-profile) has been used to [create profile repo](https://github.com/IBM/compliance-trestle-agile-authoring/blob/main/README.create-repo-profile.md) for agile authoring.
-
+Prerequisite: [profile template](https://github.com/IBM/compliance-trestle-template-profile) has been used to create repo for [agile authoring](https://github.com/IBM/compliance-trestle-agile-authoring).
 
 - [view profile markdown](#view-profile-markdown)
 - [update profile](#update-profile)
