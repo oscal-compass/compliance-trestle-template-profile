@@ -74,8 +74,6 @@ Steps to modify the profile repository with an updated profile are given below:
 
 ##### references
 
-- [documentation: setup profile repo](https://github.com/IBM/compliance-trestle-agile-authoring/blob/main/README.create-repo-profile.md)
-
 - [documentation: agile authoring](https://github.com/IBM/compliance-trestle-agile-authoring#compliance-trestle-agile-authoring)
 
 
