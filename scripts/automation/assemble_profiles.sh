@@ -1,11 +1,12 @@
 #!/bin/bash
+set -eo pipefail
 
 source config.env
 
 version_tag=$1
-if [ ${version_tag} != "" ]; then 
+if [ "${version_tag}" != "" ]; then
 	echo "Assembling ${PROFILE} with version ${version_tag}"
-	trestle author profile-assemble --markdown md_profiles/$PROFILE --output $PROFILE --version $version_tag 
+	trestle author profile-assemble --markdown md_profiles/$PROFILE --output $PROFILE --version $version_tag
 else
 	echo "Assembling ${PROFILE}"
 	trestle author profile-assemble --markdown md_profiles/$PROFILE --output $PROFILE
